@@ -30,7 +30,7 @@ Payment_Country = st.selectbox(
     ('All', 'US', 'UK', 'AU')
     )
 
-today = datetime.now()
+today = datetime.datetime.now()
 days180 = date.today() - timedelta(days = 180)
 
 StartDate = st.date_input("Start Date (Default 180 Days Prior)", days180)
